@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: burlywood;
+}
+
+.container {
+    flex: 1;
+}
+
+.card {
+    border: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1 {
+    margin-top: 50px;
+    ;
+}
+
+h3 {
+    margin-top: 10px;
+    ;
+}
+
+.card-header {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+
+
+.btnPayment {
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    background-color: brown;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btnPayment:hover {
+    background-color: rgb(169, 123, 63);
+    color: black;
+    transition: 0.7s;
+    text-decoration: none;
+}

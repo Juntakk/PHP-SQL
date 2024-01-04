@@ -1,0 +1,241 @@
+body {
+    color: burlywood;
+    background-color: rgb(172, 154, 130);
+    font: 600 16px/18px 'Open Sans', sans-serif;
+}
+
+.button {
+    background-color: burlywood;
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: rgb(138, 116, 88);
+}
+
+.group {
+    margin-top: 30px;
+    padding: 0px;
+}
+
+
+.login-space .sign-up-form {
+    height: 200px !important;
+}
+
+.login-box {
+    width: 90%;
+    height: 500px;
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left: 450px;
+    position: relative;
+    border-radius: 20px;
+    background: url("https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.login-snip {
+    width: 100%;
+    height: 500px;
+    /* margin-top: 50px; */
+    position: relative;
+    padding: 30px 20px 20px 30px;
+    border-radius: 20px;
+    background: rgba(0, 77, 77, .9);
+}
+
+.login-snip .login,
+.login-snip .sign-up-form {
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check {
+    display: none;
+    border-radius: 20px;
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button {
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.login-snip .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    /* display: inline-block; */
+    border-bottom: 2px solid transparent;
+}
+
+.login-snip .sign-in:checked+.tab,
+.login-snip .sign-up:checked+.tab {
+    color: rgb(140, 125, 107);
+    border-color: burlywood;
+}
+
+.login-space {
+    min-height: 345px;
+    position: relative;
+    border-radius: 20px;
+
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-space .group {
+    margin-bottom: 15px;
+}
+
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.login-space .group .button:hover {
+    background-color: rgb(96, 80, 60);
+    color: burlywood;
+    transition: 0.8s;
+}
+
+.login-space .group .input,
+.login-space .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.login-space .group input[data-type="password"] {
+    -webkit-text-security: circle;
+}
+
+.login-space .group .label {
+    color: burlywood;
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+
+.login-space .group .button {
+    background: burlywood;
+}
+
+.login-space .group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.login-space .group label .icon:before,
+.login-space .group label .icon:after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: burlywood;
+    position: absolute;
+    transition: all .2s ease-in-out 0s;
+}
+
+.login-space .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0);
+}
+
+.login-space .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0);
+}
+
+.login-space .group .check:checked+label {
+    color: burlywood;
+}
+
+.login-space .group .check:checked+label .icon {
+    background: gray;
+}
+
+.login-space .group .check:checked+label .icon:before {
+    transform: scale(1) rotate(45deg);
+}
+
+.login-space .group .check:checked+label .icon:after {
+    transform: scale(1) rotate(-45deg);
+}
+
+.login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
+    transform: rotate(0);
+}
+
+.login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
+    transform: rotate(0);
+}
+
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+
+
+.foot {
+    text-align: center;
+}
+
+::placeholder {
+    color: #b3b3b3;
+}
+
+.select {
+    background: rgba(255, 255, 255, .1);
+    color: #b3b3b3;
+    border-radius: 10px;
+    margin-left: -15px;
+    padding: 5px;
+    font-size: 20px;
+    max-width: 145px;
+}

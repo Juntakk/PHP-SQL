@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+}
+
+
+.bi {
+    color: burlywood;
+}
+
+.bi:hover {
+    color: rgb(232, 208, 175);
+}
+
+.social-icon {
+    margin-left: 155px !important;
+    font-size: 34px;
+    margin: 0 8px;
+    color: burlywood;
+}
+
+.social-icon:hover {
+    color: rgb(227, 214, 199);
+}
